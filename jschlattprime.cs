@@ -6,10 +6,6 @@ using System;
 using System.Reflection;
 using System.Collections.Generic;
 
-// TODO:
-// Replace gab/pano texture
-// Fix FP texture not applying
-
 namespace Jschlatt
 {
     [UKPlugin("imnotsimon.JschlattPrime","Jschlatt Prime", "1.0.0", "Replaces ALL of Minos Prime's voicelines with Jschlatt AI renditions. \nOriginal audio: https://www.youtube.com/watch?v=UHCmyUFsFqw", true, false)]
