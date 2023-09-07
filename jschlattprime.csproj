@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>JschlattPrime</AssemblyName>
+    <Description>Adds the presidents to ultrakill</Description>
+    <Version>1.1.0</Version>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>latest</LangVersion>
+    <ULTRAKILLDir>D:\SteamLibrary\steamapps\common\ULTRAKILL</ULTRAKILLDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Resources\primepresidents" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="BepInEx.Analyzers" Version="1.*" PrivateAssets="all" />
+    <PackageReference Include="BepInEx.Core" Version="5.*" />
+    <PackageReference Include="BepInEx.PluginInfoProps" Version="1.*" />
+    <PackageReference Include="UnityEngine.Modules" Version="2019.4.16" IncludeAssets="compile" />
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\..\ULRAKILL\UltraKill.Act.2\UltraKill.Act.2\ULTRAKILL\ULTRAKILL_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="UMM">
+      <HintPath>..\..\..\..\..\ULRAKILL\UltraKill.Act.2\UltraKill.Act.2\ULTRAKILL\BepInEx\plugins\UMM\UMM.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>$(ULTRAKILLDir)\ULTRAKILL_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>$(ULTRAKILLDir)\ULTRAKILL_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>$(ULTRAKILLDir)\ULTRAKILL_Data\Managed\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>$(ULTRAKILLDir)\ULTRAKILL_Data\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
